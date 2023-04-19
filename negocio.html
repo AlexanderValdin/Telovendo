@@ -12,45 +12,53 @@
 </head>
 
 <body class="bg-warning">
-    <header class="text-center">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="Principal.html">Te Lo Vendo!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Principal.html">Te Lo Vendo!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Principal.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Somos</a>
-                    </li>
-                    <li class="nav-item">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#somos">Somos</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="./Contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                </div>
+                </li>
+            </ul>
             </div>
-        </nav>
-    <h1 class="text center titulo">Te Lo Vendo</h1>
+        </div>
+    </nav>
+    <h1 class="text-center titulo">Te Lo Vendo</h1>
     <img src="https://152b3ab361.cbaul-cdnwnd.com/9f591dc933f02b070733cadba871efd4/200000437-28c9729c0e/T29820130607largeNote1.jpg" class="img-fluid" alt="tienda">    
     </header>
     <main>
-        <header class="text-center">
-            <h3>Somos</h3>
-        </header>
-        <article>
-            <p class="px-5 text-center">Somos una empresa nacida como un emprendimiento de 4 jóvenes dedicada a la venta de productos tecnológicos.
+        <section id="somos" class="container-fluid">
+            <h3 class="text-center">Somos</h3>
+        
+            <article>
+                <p class="px-5 text-center">Somos una empresa nacida como un emprendimiento de 4 jóvenes dedicada a la venta de productos tecnológicos.
                 Nuestro propósito es responder a las necesidades de nuestros usuarios y que puedan abastecerse de la última
                 tecnología a precios convenientes, luego de la expansión de las necesidades que nacieron con la pandemia.
                 <br><br><strong>¡Agradecemos su apoyo y esperamos poder brindarles el mejor servicio!</strong> </p>
-        </article>
-        <section class="text-center">
-            <img src="assets/img/22435290220_81W4ABNF_20200119035646.webp" class="img-fluid container-img bg-light" alt="notebook">
-            <img src="assets/img/TAH5205BK_00-IMS-es_CL.webp" class="img-fluid container-img" alt="audifonos">
-            <img src="assets/img/2000392805151_2.jpg" class="img-fluid container-img" alt="celular">
+            </article>
+        </section>
+        
+        <section class="row">
+            <div class="col-lg-4 col-md-12">
+                <img src="assets/img/auriculares.jpg" class="img-fluid bg-light" alt="notebook">
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="assets/img/smart-phone.jpg" class="img-fluid bg-light" alt="notebook">
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="assets/img/pc.jpg" class="img-fluid bg-light" alt="celular">
+            </div>
+            
         </section>
     </main>
     <footer class="bg-black text-light m-5 border-white rounded-5">
