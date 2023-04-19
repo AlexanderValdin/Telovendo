@@ -1,0 +1,18 @@
+main {
+    height: 100vh;
+}
+.input {
+    position: relative;
+}
+
+.input::after {
+    content: '* Ingrese la información requerida';
+    position:relative;
+    top: -15px;
+    left: 0;
+    color: red;
+    display: none;
+}
+.invalid::after {
+    display: block;
+}
