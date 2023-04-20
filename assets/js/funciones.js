@@ -7,6 +7,8 @@ function validacionFormulario() {
     if (nombre === '') {
         //console.log('No ha ingresado su nombre');
         document.querySelector('.nombre').classList.add('invalid');
+    } else {
+        document.querySelector('.nombre').classList.remove('invalid');
     }
 
     if (email === '') {
