@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <!-- CSS Propio -->
+	<link rel="stylesheet" href="assets/style.css">
+	<!-- Bootstrap 5.3.0 CSS vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- DataTables CSS y jQ3 via CDN -->
+    <link href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <header class="text-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Te Lo Vendo!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./negocio.html#somos">Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Estadisticas.html">Estadisticas</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <h1 class="text center titulo m-3">Estadísticas</h1>
+    </header>
+
+    <main class="text-center">
+        <table id="myTable" class="display mx-auto">
+            <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                    <th>Col 4</th>
+                    <th>Col 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>fila 1 col 1</td>
+                    <td>fila 1 col 2</td>
+                    <td>fila 1 col 3</td>
+                    <td>fila 1 col 4</td>
+                    <td>fila 1 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 2 col 1</td>
+                    <td>fila 2 col 2</td>
+                    <td>fila 2 col 3</td>
+                    <td>fila 2 col 4</td>
+                    <td>fila 2 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 3 col 1</td>
+                    <td>fila 3 col 2</td>
+                    <td>fila 3 col 3</td>
+                    <td>fila 3 col 4</td>
+                    <td>fila 3 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 4 col 1</td>
+                    <td>fila 4 col 2</td>
+                    <td>fila 4 col 3</td>
+                    <td>fila 4 col 4</td>
+                    <td>fila 4 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 5 col 1</td>
+                    <td>fila 5 col 2</td>
+                    <td>fila 5 col 3</td>
+                    <td>fila 5 col 4</td>
+                    <td>fila 5 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 6 col 1</td>
+                    <td>fila 6 col 2</td>
+                    <td>fila 6 col 3</td>
+                    <td>fila 6 col 4</td>
+                    <td>fila 6 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 7 col 2</td>
+                    <td>fila 7 col 1</td>
+                    <td>fila 7 col 3</td>
+                    <td>fila 7 col 4</td>
+                    <td>fila 7 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 8 col 1</td>
+                    <td>fila 8 col 2</td>
+                    <td>fila 8 col 3</td>
+                    <td>fila 8 col 4</td>
+                    <td>fila 8 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 9 col 1</td>
+                    <td>fila 9 col 2</td>
+                    <td>fila 9 col 3</td>
+                    <td>fila 9 col 4</td>
+                    <td>fila 9 col 5</td>
+                </tr>
+                <tr>
+                    <td>fila 10 col 1</td>
+                    <td>fila 10 col 2</td>
+                    <td>fila 10 col 3</td>
+                    <td>fila 10 col 4</td>
+                    <td>fila 10 col 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+
+    
+    <!-- Own JS -->
+	<script src="assets/js/funciones.js"></script>
+    <!-- DataTables JS y jQ3 via CDN -->
+    <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+	<!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
