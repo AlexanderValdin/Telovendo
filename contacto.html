@@ -11,6 +11,27 @@
     <title>Contacto - Te Lo Vendo</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg px-3 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./negocio.html">Te Lo Vendo!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./negocio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./negocio.html#somos">Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <main class="container p-5">
         <h2 class="h4 pb 2 mb-4 text-info border-bottom border-warning">Contacto</h2>
         <form id="form" action="" method="post">
@@ -26,7 +47,7 @@
                 
             <div class="input mensaje">
                 <label for="mensaje" class="form-label my-2">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control mb-4 border-warning"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control mb-4 border-warning" placeholder="Agregue su chamullo aqui"></textarea>
             </div>
             
             
@@ -36,5 +57,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="./assets/js/funciones.js"></script>
+    <a href=".\negocio.html"><button>Volver a la página principal</button></a>
 </body>
 </html>

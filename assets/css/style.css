@@ -1,5 +1,33 @@
-main {
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+    /* font-family */
+    --roboto : 'Roboto', sans-serif;
+
+    /* colors */
+
+    --color-bg: rgb(117,121,231);
+    --color-dos: rgb(154,179,245);
+    --color-tres: rgb(163,216,244);
+    --color-cuatro: rgb(185,255,252);
+
+}
+body {
+    background-color: var(--color-bg);
+}
+.navbar-brand {
+    font-family: var(--roboto);
+    font-weight: 900;
+}
+.nav-link {
+    font-family: var(--roboto);
+}
+.telovendo {
+    background-color: var(--color-dos);
+}
+.titulo {
+    font-family: var(--roboto);
+    font-weight: 700;
 }
 .input {
     position: relative;
@@ -15,4 +43,8 @@ main {
 }
 .invalid::after {
     display: block;
+}
+
+.img-fluid {
+    object-fit: cover;
 }
