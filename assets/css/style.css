@@ -21,6 +21,14 @@ body {
     color: var(--color-text);
     font-family: var(--roboto);
 }
+/*Barra de navegación*/
+.navbar {
+    background-color: var(--color-dos);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
 .navbar-brand {
     font-weight: 900;
 }
@@ -31,9 +39,11 @@ body {
 .nav-item:hover {
     border-bottom-color: var(--color-bg);
 }
+/*Barra de navegación*/
 
 main {
     background-color: var(--color-bg);
+    padding-top: 68px;
 }
 .titulo {
     font-weight: 700;
@@ -69,19 +79,12 @@ li {
 .invalid::after {
     display: block;
 }
-/*carrusel estilo*/
-/*
-#carouselExampleIndicators {
-    width: 100%;
-    margin-bottom: 5%;
-}
-.carousel-indicators {
-    margin-top: 150%;
-}
-*/
 
-/*fin carrusel estilo*/
-
+/* Section Productos */
+.img-fluid {
+    object-fit: contain;
+}
+/*Formulario de contacto*/
 .input {
     margin:auto;
 }
@@ -95,4 +98,19 @@ li {
     font-size: large;
     font-weight: bold;
 }
+/*Formulario de contacto*/
 
+/* <separacion del navbar con las secciones*/
+
+#somos{
+    scroll-margin-top: 50px;
+}
+
+#productos{
+    scroll-margin-top: 100px;
+}
+
+/* separacion del navbar con las secciones>*/
+
+
+  

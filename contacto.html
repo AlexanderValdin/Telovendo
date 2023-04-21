@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Contacto - Te Lo Vendo</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg shadow px-3 mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./negocio.html">Te Lo Vendo!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg shadow px-3 mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./negocio.html">Te Lo Vendo!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="./negocio.html#somos">Somos</a>
@@ -32,21 +34,20 @@
                         <a href="./estadisticas.html" class="nav-link">Estadísticas</a>
                     </li>
                 </ul>
-                </div>
             </div>
-        </nav>
-    </header>
-    <main class="container p-4 text-center text-dark">
+        </div>
+    </nav>
+    <main class="container mx-auto mb-2 px-4 pb-4 text-center text-dark">
         <h2 class="mb-3">Contacto</h2>
         <form class="text-center" id="form" action="" method="post">
             <div class="input nombre">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" id="nombre" class="form-control mb-4 mx-auto">
-            </div>   
+            </div>
             <div class="input email">
                 <label for="email" class="form-label">E-mail</label>
                 <input type="text" id="email" class="form-control mb-4 mx-auto">
-            </div>        
+            </div>
             <div class="input mensaje">
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control mb-4  mx-auto"></textarea>
@@ -55,11 +56,15 @@
         </form>
     </main>
 
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <!-- JQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- DataTables JS y jQ3 via CDN -->
     <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
     <!--Script validación y Jquery con Data Table -->
     <script src="assets/js/funciones.js"></script>
 </body>
+
 </html>
