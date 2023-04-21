@@ -5,6 +5,8 @@ $(document).ready(function () {
         ordering: true,
         pageLength: 3
     });
+    $('.dataTables_filter input').addClass('form-control');
+    $('.dataTables_paginate .pagination').addClass('pagination');
 });
 
 function validacionFormulario() {
