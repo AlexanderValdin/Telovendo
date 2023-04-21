@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,52 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Te Lo Vendo</title>
-    <!-- CSS Propio -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap 5.3.0 CSS vía CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg shadow">
+        <nav class="navbar navbar-expand-lg shadow px-3 mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Principal.html">Te Lo Vendo!</a>
+                <a class="navbar-brand" href="./negocio.html">Te Lo Vendo!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="Principal.html">Inicio</a>
+                            <a class="nav-link" href="#somos">Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Somos</a>
+                            <a class="nav-link" href="#productos">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./estadisticas.html" class="nav-link">Estadísticas</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    <h1 class="text center titulo">Te Lo Vendo</h1>
-    <img src="https://152b3ab361.cbaul-cdnwnd.com/9f591dc933f02b070733cadba871efd4/200000437-28c9729c0e/T29820130607largeNote1.jpg" class="img-fluid" alt="tienda">    
-    <main>
-            <h3>Somos</h3>
-        
-        <article>
-            <p class="px-5 text-center">Somos una empresa nacida como un emprendimiento de 6 jóvenes dedicada a la venta de productos tecnológicos.
+    <main class="container mt-2 p-4">
+        <section class="text-center mb-4">
+            <h1 class="text-center fw-bold">Te Lo Vendo</h1>
+            <img src="https://152b3ab361.cbaul-cdnwnd.com/9f591dc933f02b070733cadba871efd4/200000437-28c9729c0e/T29820130607largeNote1.jpg" class="img-fluid" alt="tienda"> 
+        </section>
+        <section class="p-5" id="somos">
+            <article>
+                <h3 class="fw-bold mb-3">Somos</h3>
+                <p class="text-center">Somos una empresa nacida como un emprendimiento de 6 jóvenes dedicada a la venta de productos tecnológicos.
                 Nuestro propósito es responder a las necesidades de nuestros usuarios y que puedan abastecerse de la última
                 tecnología a precios convenientes, luego de la expansión de las necesidades que nacieron con la pandemia.
                 <br><br><strong>¡¡¡Agradecemos su apoyo y esperamos poder brindarles el mejor servicio!!!</strong> </p>
-        </article>
-        <section class="text-center">
-            <img src="assets/img/22435290220_81W4ABNF_20200119035646.webp" class="img-fluid container-img bg-light" alt="notebook">
-            <img src="assets/img/TAH5205BK_00-IMS-es_CL.webp" class="img-fluid container-img" alt="audifonos">
+            </article>
+        </section>
+        <!--agregar carrusel de imagenes-->
+        
+        <section id="productos">
+            <h3 class="fw-bold mb-3 ps-5">Productos</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="d-block w-100" src="assets/img/auriculares.jpg" alt="First slide">
+                        </div>
+                        <div class="col-3">
+                            <img class="d-block w-100" src="assets/img/pc.jpg" alt="Second slide">
+                        </div>
+                        <div class="col-3">
+                            <img class="d-block w-100" src="assets/img/smart-phone.jpg" alt="Third slide">
+                        </div>
+                        <div class="col-3">
+                            <img class="d-block w-100" src="https://www.powerzoneshop.es/143-large_default/caja-pc-gaming-xigmatek-overtake-rgb-torre-grande-e-atx-panel-frontal-y-lateral-cristal-templado-6-ventiladores.jpg" alt="Fourth slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                            <div class="col-3">
+                                <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/IPod-Classic-5thGen-White.jpg" alt="Fifth slide">
+                            </div>
+                            <div class="col-3">
+                                <img class="d-block w-100" src="https://media.solotodo.com/media/products/1671631_picture_1669123982.jpg" alt="Sixth slide">
+                            </div>
+                            <div class="col-3">
+                                <img class="d-block w-100" src="https://falabella.scene7.com/is/image/Falabella/14556884_1?wid=1500&hei=1500&qlt=70.jpg" alt="Seventh slide">
+                            </div>
+                            <div class="col-3">
+                                <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/IPod-Classic-5thGen-White.jpg" alt="Eighth slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
-    <footer class="bg-black text-light m-5 border-white rounded-5">
-        <h2 class="text-center">Integrantes</h2>
+
+    <footer class="text-light m-5 border-white rounded-5">
+        <h2 class="text-center py-3">Los Chamuyeros del Código</h2>
         <ul class="ms-5">
             <li>Ariel Navarro</li>
             <li>Catalina Figueroa</li>
@@ -61,9 +116,14 @@
             <li>Luis Rodríguez(Anibaloso)</li>
             <li>Alexander Valenzuela</li>
         </ul>
-        <h4>2023</h4>  
+        <h4 class="text-center py-3"> &copy; 2023</h4>  
     </footer>
- <!-- Hola, este es el comentario de cata ;)-->
-    <script src="assets/funciones.js"></script>
+<!-- Hola, este es el comentario de cata ;)-->
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- DataTables JS y jQ3 via CDN -->
+    <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+    <!--Script validación y Jquery con Data Table -->
+    <script src="assets/js/funciones.js"></script>
 </body>
 </html>

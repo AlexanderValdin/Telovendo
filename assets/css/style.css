@@ -10,25 +10,50 @@
     --color-dos: rgb(154,179,245);
     --color-tres: rgb(163,216,244);
     --color-cuatro: rgb(185,255,252);
+    --color-text: rgba(0,0,0,0.7)
 
 }
 body {
-    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-dos);
+    color: var(--color-text);
+    font-family: var(--roboto);
 }
 .navbar-brand {
-    font-family: var(--roboto);
     font-weight: 900;
 }
-.nav-link {
-    font-family: var(--roboto);
+.nav-item {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
 }
-.telovendo {
-    background-color: var(--color-dos);
+.nav-item:hover {
+    border-bottom-color: var(--color-bg);
+}
+
+main {
+    background-color: var(--color-bg);
 }
 .titulo {
-    font-family: var(--roboto);
     font-weight: 700;
 }
+
+.img-fluid {
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--color-bg);
+}
+
+li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Contacto.html */
+
 .input {
     position: relative;
 }
@@ -38,13 +63,38 @@ body {
     position:relative;
     top: -15px;
     left: 0;
-    color: red;
+    color: var(--color-cuatro);
     display: none;
 }
 .invalid::after {
     display: block;
 }
-
-.img-fluid {
-    object-fit: cover;
+/*carrusel estilo*/
+#carouselExampleIndicators {
+    width: 100%;
+    margin-bottom: 5%;
 }
+
+.carousel-indicators {
+    margin-top: 150%;
+}
+
+
+/*fin carrusel estilo*/
+
+.input {
+    margin: 0 auto;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    max-width: 400px;
+    margin-left: 32%; 
+    
+}
+.form-label {
+    font-size: large;
+    font-weight: bold;
+}
+

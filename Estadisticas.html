@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estadisticas</title>
-    <!-- CSS Propio -->
-	<link rel="stylesheet" href="assets/style.css">
+    
 	<!-- Bootstrap 5.3.0 CSS vía CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <!-- DataTables CSS y jQ3 via CDN -->
     <link href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+    <!-- CSS Propio -->
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <header class="text-center">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg s">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">Te Lo Vendo!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>
+                        <a class="nav-link" href="./negocio.html">Inicio</a>
+                    </li>   
                     <li class="nav-item">
                         <a class="nav-link" href="./negocio.html#somos">Somos</a>
                     </li>
@@ -39,103 +38,110 @@
                 </div>
             </div>
         </nav>
-    <h1 class="text center titulo m-3">Estadísticas</h1>
-    </header>
+    <h1 class="text-center titulo m-3">Estadísticas</h1>
 
     <main class="text-center">
-        <table id="myTable" class="display mx-auto">
-            <thead>
-                <tr>
-                    <th>Col 1</th>
-                    <th>Col 2</th>
-                    <th>Col 3</th>
-                    <th>Col 4</th>
-                    <th>Col 5</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>fila 1 col 1</td>
-                    <td>fila 1 col 2</td>
-                    <td>fila 1 col 3</td>
-                    <td>fila 1 col 4</td>
-                    <td>fila 1 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 2 col 1</td>
-                    <td>fila 2 col 2</td>
-                    <td>fila 2 col 3</td>
-                    <td>fila 2 col 4</td>
-                    <td>fila 2 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 3 col 1</td>
-                    <td>fila 3 col 2</td>
-                    <td>fila 3 col 3</td>
-                    <td>fila 3 col 4</td>
-                    <td>fila 3 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 4 col 1</td>
-                    <td>fila 4 col 2</td>
-                    <td>fila 4 col 3</td>
-                    <td>fila 4 col 4</td>
-                    <td>fila 4 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 5 col 1</td>
-                    <td>fila 5 col 2</td>
-                    <td>fila 5 col 3</td>
-                    <td>fila 5 col 4</td>
-                    <td>fila 5 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 6 col 1</td>
-                    <td>fila 6 col 2</td>
-                    <td>fila 6 col 3</td>
-                    <td>fila 6 col 4</td>
-                    <td>fila 6 col 5</td>
-                </tr>
-                <tr>
-                    <td>fila 7 col 2</td>
-                    <td>fila 7 col 1</td>
-                    <td>fila 7 col 3</td>
-                    <td>fila 7 col 4</td>
-                    <td>fila 7 col 5</td>
+        <section> 
+            <h1 class="text-center titulo m-3">Inventario</h1>
+            <table id="inventario" class="display mx-auto table table-bordered border-dark p-2 mb-2 border-opacity-50">
+                <thead >
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Disponibilidad</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop Dell Inspiron</td>
+                        <td>Laptop con procesador Intel Core i7, 8 GB de RAM y disco duro de 1 TB</td>
+                        <td>$899,992</td>
+                        <td>En stock</td>
+                        <td>Computadoras</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono Samsung Galaxy S21</td>
+                        <td>Teléfono inteligente con pantalla OLED de 6.2 pulgadas, cámara de 64 MP y 128 GB de almacenamiento</td>
+                        <td>$599,992</td>
+                        <td>En stock</td>
+                        <td>Teléfonos</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor LG UltraGear</td>
+                        <td>Monitor para juegos con pantalla curva de 27 pulgadas, resolución 4K y tasa de refresco de 144 Hz</td>
+                        <td>$749,992</td>
+                        <td>Agotado</td>
+                        <td>Accesorios</td>
+                    </tr>
+                    <tr>
+                        <td>Altavoz Bose SoundLink</td>
+                        <td>Altavoz portátil con conectividad Bluetooth, resistente al agua y batería de hasta 12 horas de duración</td>
+                        <td>$149,992</td>
+                        <td>En stock</td>
+                        <td>Audio</td>
+                    </tr>
+                    <tr>
+                        <td>Tableta Apple iPad Pro</td>
+                        <td>Tableta con pantalla Liquid Retina de 11 pulgadas, procesador M1 y 256 GB de almacenamiento</td>
+                        <td>$674,992</td>
+                        <td>En stock</td>
+                        <td>Tabletas</td>
+                    </tr>
+                    <tr>
+                        <td>Cámara Sony Alpha a6400</td>
+                        <td>Cámara sin espejo con sensor APS-C de 24.2 MP, grabación de video 4K y pantalla táctil inclinable</td>
+                    <td>$899,992</td>
+                    <td>En stock</td>
+                    <td>Cámaras</td>
                 </tr>
                 <tr>
-                    <td>fila 8 col 1</td>
-                    <td>fila 8 col 2</td>
-                    <td>fila 8 col 3</td>
-                    <td>fila 8 col 4</td>
-                    <td>fila 8 col 5</td>
+                    <td>Auriculares Sony WH-1000XM4</td>
+                    <td>Auriculares inalámbricos con cancelación de ruido, hasta 30 horas de duración de la batería y micrófono incorporado</td>
+                    <td>$262,492</td>
+                    <td>Agotado</td>
+                    <td>Audio</td>
                 </tr>
                 <tr>
-                    <td>fila 9 col 1</td>
-                    <td>fila 9 col 2</td>
-                    <td>fila 9 col 3</td>
-                    <td>fila 9 col 4</td>
-                    <td>fila 9 col 5</td>
+                    <td>Router Linksys Velop</td>
+                    <td>Sistema de malla Wi-Fi para toda la casa con tres nodos, tecnología MU-MIMO y velocidad de hasta 5.3 Gbps</td>
+                    <td>$374,992</td>
+                    <td>En stock</td>
+                    <td>Redes</td>
                 </tr>
                 <tr>
-                    <td>fila 10 col 1</td>
-                    <td>fila 10 col 2</td>
-                    <td>fila 10 col 3</td>
-                    <td>fila 10 col 4</td>
-                    <td>fila 10 col 5</td>
+                    <td>Smartwatch Apple Watch Series 6</td>
+                    <td>Smartwatch con pantalla siempre activa, monitoreo de frecuencia cardíaca y detección de caídas</td>
+                    <td>$299,992</td>
+                    <td>En stock</td>
+                    <td>Accesorios</td>
+                </tr>
+                <tr>
+                    <td>Consola de videojuegos PlayStation 5</td>
+                    <td>Consola de próxima generación con capacidad de gráficos 4K, unidad de almacenamiento SSD y controlador DualSense</td>
+                    <td>$374,992</td>
+                    <td>Agotado</td>
+                    <td>Consolas de juegos</td>
                 </tr>
             </tbody>
         </table>
+        </section>
+    
     </main>
 
 
 
     
-    <!-- Own JS -->
-	<script src="assets/js/funciones.js"></script>
-    <!-- DataTables JS y jQ3 via CDN -->
-    <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+    
+    
 	<!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- DataTables JS y jQ3 via CDN -->
+    <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+    <!--Script validación y Jquery con Data Table -->
+    <script src="assets/js/funciones.js"></script>
 </body>
 </html>
